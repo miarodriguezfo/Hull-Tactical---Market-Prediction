@@ -16,21 +16,26 @@ Se han generado los siguientes archivos listos para submission:
 - **Contenido**: Mismas predicciones en formato CSV
 - **Uso**: Verificación y backup
 
-### 3. **`kaggle_submission_corrected.ipynb`** ⭐ (RECOMENDADO)
-- **Formato**: Jupyter Notebook CORREGIDO
+### 3. **`kaggle_submission_final.ipynb`** ⭐ (RECOMENDADO)
+- **Formato**: Jupyter Notebook con API de Kaggle integrada
 - **Uso**: Subir como notebook de Kaggle para ejecución en vivo
-- **Ventaja**: Detecta automáticamente la estructura de datos real
-- **Características**: Manejo flexible de nombres de columnas
+- **Ventaja**: Incluye `kaggle_evaluation.hull_tactical_market_prediction.run(predict)`
+- **Características**: API oficial de evaluación + detección automática de datos
+
+### 4. **`hull_tactical_submission_api.py`**
+- **Formato**: Script Python con API integrada
+- **Uso**: Versión standalone con función `predict()` lista para Kaggle
+- **Ventaja**: Código modular y reutilizable
 
 ## 🚀 Opciones de Submission
 
-### Opción A: Subir Notebook (RECOMENDADO) ⭐
+### Opción A: Subir Notebook con API (RECOMENDADO) ⭐
 1. Ve a la sección "Code" de la competencia
 2. Haz clic en "New Notebook"
-3. Sube el archivo **`kaggle_submission_corrected.ipynb`**
+3. Sube el archivo **`kaggle_submission_final.ipynb`**
 4. Ejecuta el notebook completo
-5. Haz submission desde el notebook
-6. **Ventaja**: Se adapta automáticamente a la estructura real de datos
+5. La evaluación se ejecutará automáticamente con `evaluation.run(predict)`
+6. **Ventaja**: Usa la API oficial de Kaggle + detección automática de datos
 
 ### Opción B: Subir Archivo de Predicciones (ALTERNATIVA)
 1. Ve a la página de la competencia: https://www.kaggle.com/competitions/hull-tactical-market-prediction
@@ -38,6 +43,31 @@ Se han generado los siguientes archivos listos para submission:
 3. Sube el archivo **`hull_tactical_predictions_corrected.parquet`**
 4. Añade una descripción: "AutoML Ensemble con detección automática de estructura de datos"
 5. Haz clic en "Make Submission"
+
+## 🔧 API de Evaluación de Kaggle
+
+### Integración Oficial
+La solución incluye integración con la **API oficial de evaluación de Kaggle**:
+
+```python
+import kaggle_evaluation.hull_tactical_market_prediction as evaluation
+evaluation.run(predict)
+```
+
+### Función `predict()` Optimizada
+- **Input**: DataFrame con datos de test
+- **Output**: Array numpy con predicciones
+- **Características**:
+  - Detección automática de estructura de datos
+  - Manejo robusto de errores
+  - Fallback a predicciones conservadoras
+  - Logging completo para debugging
+
+### Ventajas de la API
+- ✅ **Evaluación automática** en tiempo real
+- ✅ **Compatibilidad garantizada** con el sistema de Kaggle
+- ✅ **Manejo de datos streaming** durante la fase de forecasting
+- ✅ **Feedback inmediato** sobre performance
 
 ## 📊 Características de la Solución
 
