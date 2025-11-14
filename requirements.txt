@@ -1,32 +1,31 @@
-# Core data science libraries
+# 🏆 Hull Tactical ULTIMATE - Requirements
+# Dependencias mínimas para el notebook principal
+
+# Core Data Science
 pandas>=1.5.0
 numpy>=1.21.0
-scikit-learn>=1.1.0
+scipy>=1.9.0
 
-# Machine Learning models
+# Machine Learning (Esenciales)
+scikit-learn>=1.1.0
 lightgbm>=3.3.0
 xgboost>=1.6.0
 catboost>=1.1.0
 
-# AutoML frameworks
-autogluon>=0.8.0
-flaml>=2.0.0
+# Optimization
 optuna>=3.0.0
 
 # Visualization
 matplotlib>=3.5.0
 seaborn>=0.11.0
-plotly>=5.10.0
 
-# Technical analysis
-ta>=0.10.0
-yfinance>=0.2.0
+# Jupyter Environment
+jupyter>=1.0.0
+ipykernel>=6.0.0
 
 # Utilities
-scipy>=1.9.0
-joblib>=1.2.0
 tqdm>=4.64.0
+joblib>=1.2.0
 
-# Optional: Deep learning (if needed)
-# torch>=1.12.0
-# tensorflow>=2.9.0
+# Note: El notebook hull_tactical_ULTIMATE.ipynb instala automáticamente
+# las dependencias que falten, por lo que este archivo es opcional.

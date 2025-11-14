@@ -6,18 +6,15 @@ Esta es la **solución definitiva** para la competencia [Hull Tactical Market Pr
 
 ---
 
-## 🚀 SOLUCIÓN ÚNICA INTEGRADA
+## 🚀 SOLUCIÓN ÚNICA Y COMPLETA
 
-### 📁 **NOTEBOOK PRINCIPAL**
+### 📁 **ÚNICO NOTEBOOK NECESARIO**
 - **`hull_tactical_ULTIMATE.ipynb`** - 🏆 **SOLUCIÓN COMPLETA Y DEFINITIVA**
-  - Integra todas las mejoras y optimizaciones
+  - Integra TODAS las mejoras y optimizaciones
+  - Código completo auto-contenido
   - Listo para submission directa en Kaggle
   - Hull Score objetivo: 10+ (primer puesto)
-
-### 📁 **Notebooks de Soporte**
-- **`kaggle_inference_submission.ipynb`** - Versión específica para inference server
-- **`hull_tactical_FINAL_FIXED.ipynb`** - Versión con fixes específicos
-- **`hull_tactical_final_submission.ipynb`** - Versión alternativa de submission
+  - **NO necesitas ningún otro archivo**
 
 ---
 
@@ -138,24 +135,26 @@ def hull_metric_exact(y_true, y_pred):
 
 ---
 
-## 📋 ARCHIVOS PRINCIPALES
+## 📋 ARCHIVOS DEL REPOSITORIO
 
-### 📁 **Notebooks**
-- `hull_tactical_ULTIMATE.ipynb` - 🏆 **SOLUCIÓN PRINCIPAL**
-- `kaggle_inference_submission.ipynb` - Inference server version
-- `hull_tactical_FINAL_FIXED.ipynb` - Fixed version
-- `hull_tactical_final_submission.ipynb` - Alternative submission
+### 📁 **Archivos Esenciales**
+- **`hull_tactical_ULTIMATE.ipynb`** - 🏆 **ÚNICO NOTEBOOK NECESARIO**
+  - Solución completa auto-contenida
+  - Todas las funciones y clases incluidas
+  - Listo para usar sin dependencias externas
+- **`README.md`** - Esta documentación
+- **`requirements.txt`** - Dependencias de Python
+- **`.gitignore`** - Configuración de Git
 
-### 📁 **Scripts de Soporte**
-- `diagnostic_analysis.py` - Análisis que reveló el problema
-- `advanced_optimization.py` - Optimización Bayesiana con Optuna
-- `risk_management.py` - Sistema de gestión de riesgo
-- `testing_validation_plan.py` - Framework de validación
-
-### 📁 **Documentación**
-- `PLAN_MAESTRO_PRIMER_PUESTO.md` - Plan maestro completo
-- `KAGGLE_SUBMISSION_INSTRUCTIONS.md` - Instrucciones detalladas
-- `README.md` - Este archivo
+### ✨ **TODO EN UN SOLO ARCHIVO**
+El notebook `hull_tactical_ULTIMATE.ipynb` incluye:
+- 📊 Análisis diagnóstico completo
+- 🔧 Feature engineering extremo
+- 🤖 Ensemble supremo multi-algoritmo
+- 🎯 Optimización Hull específica
+- 🛡️ Gestión de riesgo avanzada
+- ✅ Validación exhaustiva
+- 🚀 Integración Kaggle completa
 
 ---
 
@@ -222,19 +221,25 @@ def hull_metric_exact(y_true, y_pred):
 
 ## 🚀 EJECUCIÓN
 
-### ⚡ **Quick Start**
+### ⚡ **Quick Start - Solo 3 Pasos**
 ```bash
-# 1. Subir hull_tactical_ULTIMATE.ipynb a Kaggle
-# 2. Run All
-# 3. Submit to Competition
-# 4. Esperar Hull Score 10+ 🏆
+# 1. Descargar hull_tactical_ULTIMATE.ipynb
+# 2. Subir a Kaggle → Code → New Notebook → Upload
+# 3. Run All → Submit to Competition → Hull Score 10+ 🏆
 ```
 
 ### 🔧 **Desarrollo Local**
 ```bash
 git clone https://github.com/miarodriguezfo/Hull-Tactical---Market-Prediction.git
 cd Hull-Tactical---Market-Prediction
+pip install -r requirements.txt
 jupyter notebook hull_tactical_ULTIMATE.ipynb
+```
+
+### 📦 **Instalación de Dependencias**
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn
+pip install lightgbm xgboost catboost optuna scipy
 ```
 
 ---
